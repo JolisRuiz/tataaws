@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "10c46deb-0095-4771-8d29-0603ab8190df",
+		"name": "AWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar Vehiculo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"nombre\": \"carro 10\", \r\n    \"modelo\":\"modelo 1\", \r\n    \"costo_en_creditos\": \"10\", \r\n    \"longitud\": \"204\", \r\n    \"maxima_velocidad_atmosferica\": \"14\", \r\n    \"tripulacion\": \"3\", \r\n    \"pasajeros\": \"4\", \r\n    \"capacidad_de_carga\": \"1\", \r\n    \"consumibles\": \"12semanas\", \r\n    \"clase_de_vehiculos\": \"12\", \r\n    \"url\": \"none\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://w58yfqj3hb.execute-api.us-east-2.amazonaws.com/dev/nuevovehiculo",
+					"protocol": "https",
+					"host": [
+						"w58yfqj3hb",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"nuevovehiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Vehiculos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://w58yfqj3hb.execute-api.us-east-2.amazonaws.com/dev/vehiculo",
+					"protocol": "https",
+					"host": [
+						"w58yfqj3hb",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"vehiculo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
